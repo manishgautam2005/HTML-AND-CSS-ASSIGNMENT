@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Manish Kumar - BCAI Student and Aspiring Web Developer">
+
+    <title>Manish Kumar | Student Resume</title>
+
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #eef2f7;
+            color: #263238;
+            line-height: 1.7;
+            padding: 30px 15px;
+        }
+
+        .resume {
+            max-width: 900px;
+            margin: auto;
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Header */
+        .header {
+            background: #17365d;
+            color: #ffffff;
+            padding: 40px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        .header .role {
+            color: #b9d7ff;
+            font-size: 18px;
+            margin-bottom: 18px;
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 24px;
+            font-size: 14px;
+        }
+
+        .contact a {
+            color: #ffffff;
+            text-decoration: none;
+            overflow-wrap: anywhere;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        .content {
+            padding: 35px 40px;
+        }
+
+        section {
+            margin-bottom: 28px;
+        }
+
+        h2 {
+            color: #17365d;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #d9e5f2;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 17px;
+            color: #263238;
+            margin-bottom: 4px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        .muted {
+            color: #637381;
+            font-size: 14px;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: #eaf2fc;
+            color: #17365d;
+            padding: 7px 15px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* Project */
+        .project {
+            border-left: 3px solid #2f75b5;
+            padding-left: 15px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: #f5f8fc;
+            color: #637381;
+            padding: 15px;
+            font-size: 12px;
+        }
+
+        /* Print / PDF */
+        .print-button {
+            display: block;
+            margin: 20px auto 0;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            background: #17365d;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .print-button:hover {
+            background: #24558a;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 28px 22px;
+            }
+
+            .header h1 {
+                font-size: 29px;
+            }
+
+            .content {
+                padding: 25px 22px;
+            }
+
+            .contact {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+
+            .resume {
+                box-shadow: none;
+                max-width: 100%;
+                border-radius: 0;
+            }
+
+            .print-button {
+                display: none;
+            }
+
+            .header {
+                background: #17365d !important;
+                color: white !important;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .skill {
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="resume">
+
+        <!-- Resume Header -->
+        <header class="header">
+            <h1>Manish Kumar</h1>
+
+            <p class="role">
+                BCAI Student | Aspiring Web Developer
+            </p>
+
+            <div class="contact">
+                <span>
+                    Location: Uttar Pradesh, India
+                </span>
+
+                <span>
+                    Email:
+                    <a href="mailto:manishboykumar23@gmail.com">
+                        manishboykumar23@gmail.com
+                    </a>
+                </span>
+
+                <span>
+                    Phone:
+                    <a href="tel:9161422064">
+                        +91 9161422064
+                    </a>
+                </span>
+            </div>
+        </header>
+
+        <!-- Resume Content -->
+        <div class="content">
+
+            <section>
+                <h2>Career Objective</h2>
+
+                <p>
+                    Motivated BCAI student at Invertis University,
+                    Bareilly, with an interest in web development
+                    and programming. Eager to strengthen technical
+                    skills, build practical projects, and learn
+                    modern web development technologies.
+                </p>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+
+                <h3>
+                    Bachelor of Computer Applications
+                    (BCAI)
+                </h3>
+
+                <p>
+                    Invertis University, Bareilly
+                </p>
+
+                <p class="muted">
+                    Current Study Year: Second Year
+                </p>
+            </section>
+
+            <section>
+                <h2>Technical Skills</h2>
+
+                <div class="skills">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">C Programming</span>
+                    <span class="skill">Java</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>Projects</h2>
+
+                <div class="project">
+                    <h3>HTML &amp; CSS Assignments</h3>
+
+                    <p>
+                        Created web pages as part of HTML and CSS
+                        coursework to practise webpage structure,
+                        headings, paragraphs, and styling.
+                    </p>
+
+                    <p class="muted">
+                        Technologies: HTML5, CSS3
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Areas of Interest</h2>
+
+                <p>
+                    Front-End Web Development, Website Design,
+                    and Programming Fundamentals.
+                </p>
+            </section>
+
+        </div>
+
+        <footer>
+            Resume of Manish Kumar
+        </footer>
+
+    </main>
+
+    <button class="print-button" onclick="window.print()">
+        Print / Save as PDF
+    </button>
+
+</body>
+</html>
